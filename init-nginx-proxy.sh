@@ -7,6 +7,7 @@ then
 fi
 
 echo "Initializing nginx proxy for Guacamole using $1 as domain name"
+echo "Note, nginx should already be installed on host before running this script!"
 sudo cp nginx/mysite.template /etc/nginx/conf.d/guacamole-proxy.conf
 sudo sed -i "s|domain-name-here.com|$1|g" /etc/nginx/conf.d/guacamole-proxy.conf
 echo
