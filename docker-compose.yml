@@ -114,5 +114,5 @@ services:
     networks:
       guacnetwork_compose:
     ports:
-    - 8080/tcp # Guacamole is on :8080/guacamole, not /.
+    - 8080:8080/tcp # Guacamole is on :8080/guacamole, not /.
     restart: always
