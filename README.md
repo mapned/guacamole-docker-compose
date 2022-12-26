@@ -117,6 +117,12 @@ It creates the necessary database initialization file for postgres.
 ## reset.sh
 To reset everything to the beginning, just run `./reset.sh`.
 
+## init-nginx-proxy.sh
+Meant for initializing nginx proxy that is already installed on host. Copies nginx proxy template for guacamole to /etc/nginx/conf.d on host. Public domain name that is used to access guacamole, is required as commandline parameter, for example:
+~~~bash
+./init-nginx-proxy.sh domain-name.com
+~~~
+
 ## WOL
 
 Wake on LAN (WOL) does not work and I will not fix that because it is beyound the scope of this repo. But [zukkie777](https://github.com/zukkie777) who also filed [this issue](https://github.com/boschkundendienst/guacamole-docker-compose/issues/12) fixed it. You can read about it on the [Guacamole mailing list](http://apache-guacamole-general-user-mailing-list.2363388.n4.nabble.com/How-to-docker-composer-for-WOL-td9164.html)
