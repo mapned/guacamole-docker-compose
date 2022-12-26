@@ -11,4 +11,4 @@ echo "Note, nginx should already be installed on host before running this script
 sudo cp nginx/mysite.template /etc/nginx/conf.d/guacamole-proxy.conf
 sudo sed -i "s|domain-name-here.com|$1|g" /etc/nginx/conf.d/guacamole-proxy.conf
 echo
-echo "Done: nginx proxy for Guacamole initialized. You'll want to create and deploy certificates (with certbot or similar) and restart nginx"
+echo "Done: nginx proxy for Guacamole initialized. Remember to create and deploy certificates (with certbot or similar) and restart nginx"
