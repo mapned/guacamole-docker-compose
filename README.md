@@ -79,7 +79,7 @@ The following part of docker-compose.yml will create an instance of PostgreSQL u
 ~~~
 
 #### Guacamole
-The following part of docker-compose.yml will create an instance of guacamole by using the docker image `guacamole` from docker hub. It is also highly configurable using environment variables. In this setup it is configured to connect to the previously created postgres instance using a username and password and the database `guacamole_db`. Port 8080 is exposed to host
+The following part of docker-compose.yml will create an instance of guacamole by using the docker image `guacamole` from docker hub. It is also highly configurable using environment variables. In this setup it is configured to connect to the previously created postgres instance using a username and password and the database `guacamole_db`. Port 8080 is exposed for access on localhost
 
 ~~~python
 ...
@@ -100,7 +100,7 @@ The following part of docker-compose.yml will create an instance of guacamole by
     networks:
       guacnetwork_compose:
     ports:
-    - 8080:8080/tcp
+    - 8080/tcp
     restart: always
 ...
 ~~~
