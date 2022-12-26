@@ -2,7 +2,7 @@
 echo
 if [ -z "$1" ] || [ "$1" = "" ]
 then
-	echo "Undefined proxy domain name. Give domain name as parameter, for ex.: ./init-nginx-proxy.sh domain-name.com
+	echo "Undefined proxy domain name. Give domain name as parameter, for ex.: ./init-nginx-proxy.sh domain-name.com"
 	exit 1
 fi
 
