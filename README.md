@@ -100,7 +100,7 @@ The following part of docker-compose.yml will create an instance of guacamole by
     networks:
       guacnetwork_compose:
     ports:
-    - 8080/tcp
+    - 127.0.0.1:8080:8080/tcp
     restart: always
 ...
 ~~~
