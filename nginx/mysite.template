@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name http://domain-name-here.com;
+    server_name domain-name-here.com;
     
     location / {
     proxy_pass http://127.0.0.1:8080/guacamole/;
